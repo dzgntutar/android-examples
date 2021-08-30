@@ -1,5 +1,6 @@
 package com.duzguntutar.sehirlerapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.duzguntutar.sehirlerapp.databinding.ActivityDetailBinding
@@ -15,6 +16,12 @@ class DetailActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+        val intent = intent
+        val selectedCity = intent.getSerializableExtra("city") as City
+
+        binding.tvName.text = selectedCity.name
+        binding.tvPopulation.text = selectedCity.population.toString()
+        binding.ivCity.setImageResource(selectedCity.image)
 
     }
 }
