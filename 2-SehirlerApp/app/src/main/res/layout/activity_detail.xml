@@ -7,7 +7,7 @@
     tools:context=".DetailActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ivCity"
         android:layout_width="309dp"
         android:layout_height="238dp"
         android:layout_marginStart="8dp"
@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <TextView
-        android:id="@+id/textViewName"
+        android:id="@+id/tvName"
         android:layout_width="343dp"
         android:layout_height="50dp"
         android:layout_marginTop="48dp"
@@ -29,10 +29,10 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/ivCity" />
 
     <TextView
-        android:id="@+id/textViewCount"
+        android:id="@+id/tvPopulation"
         android:layout_width="343dp"
         android:layout_height="50dp"
         android:layout_marginTop="25dp"
@@ -42,5 +42,5 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
 </androidx.constraintlayout.widget.ConstraintLayout>
